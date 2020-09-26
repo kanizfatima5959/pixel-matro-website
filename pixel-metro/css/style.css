@@ -1,0 +1,358 @@
+body{
+    font-family: 'Exo', sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+a,a:hover{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none
+}
+
+.full-nav .navbar-nav .nav-link,
+.full-nav .navbar-nav .active>.nav-link{
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    border: 2px solid transparent
+}
+.full-nav .navbar-nav .nav-link:hover{
+    color: #fff;
+    border-color:#028794;
+}
+.full-nav{
+  position: absolute;
+    top: 0px;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+/* slider start*/
+.slider{
+    background: url(../images/banner.jpg)top left no-repeat;
+    background-size: cover;
+    height: 820px;
+    position: relative;
+    z-index: 1
+}
+.slider2{
+     background: url(../images/book-cover-eyes-1314584.jpg)top left no-repeat;
+    background-size: cover;
+    height: 820px;
+    position: relative;
+    z-index: 1
+}
+.slider3{
+     background: url(../images/cover-girl-hands-1323206.jpg)top left no-repeat;
+    background-size: cover;
+    height: 820px;
+    position: relative;
+    z-index: 1
+}
+.slider:before,
+#full-service:before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.58);
+    z-index: -1
+}
+.banner-content{
+    position: absolute;
+    bottom: 154px;
+    right: 0;
+    text-align: center
+}
+.banner-text{
+    width: 90%;
+
+}
+.banner-text h2{
+    font-size: 40px;
+    font-family: "Myriad Pro";
+    color: #fff;
+    text-transform: capitalize;
+}
+.banner-text p{
+  font-size: 29px;
+    font-family: "Myriad Pro";
+    color: #fff;
+    text-transform: capitalize;
+}
+.slick-dots{
+   text-align: center;
+
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+}
+
+.slick-dots li{
+ display: inline-block;
+
+    
+}
+
+.slick-dots li button{
+    border-style: none;
+    background-color:transparent;
+    border: 3px solid #fff;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    font-size: 0;
+    margin: 4px
+    
+}
+.slick-dots li button:hover{
+    background-color: #028794;
+}
+
+/* slider end*/
+#full-about{
+    padding: 60px 0;
+    font-family: "Myriad Pro"
+}
+.text-about h3{
+    font-size: 26px;
+    color: #028794;
+    font-family: "Myriad Pro";
+    
+    
+}
+.text-about p{
+    font-size: 14px;
+  text-align: justify;
+    font-family: "Myriad Pro";
+    
+    
+}
+/* service start */
+#full-service{
+ background: url(../images/service.jpg)left top no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+    position: relative;
+    z-index: 1;
+   
+}
+.sec-tittle{
+    text-align: center;
+    font-family: "Myriad Pro"
+}
+.sec-tittle h2{
+    font-size: 24px;
+    color: #028794;
+    text-transform: uppercase;
+    
+}
+.sec-tittle p{
+    font-size: 14px;
+    color: #303132;
+   
+    
+}
+#full-service .sec-tittle p{
+    font-size: 14px;
+    color: #fff;
+   
+    
+}
+.service-col{
+    text-align: center;
+    color: #fff;
+    margin-top: 40px;
+}
+.service-col i{
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color:  #028794;
+    border-radius: 50%;
+}
+
+.service-col h5{
+        font-size: 17px;
+    display: inline-block;
+    margin-left: 10px
+}
+.service-col p{
+    text-align: justify;
+    font-size:15px ;
+    margin-top: 30px
+}
+
+/* service end*/
+#full-works{
+    padding: 60px 0;
+    text-align: center
+}
+
+.sec-tittle p{
+    font-size: 15px;
+    margin-bottom: 0
+}
+.work-button button{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #0b0b0b;
+    margin-top: 30px;
+}
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(42, 148, 156, 0.81);
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s linear;
+    transform: scale(0)
+    
+}
+.overlay-cont p{
+    margin-top: 50px;
+    font-size: 12px;
+    font-family: "Myriad Pro"
+}
+.overlay-cont i{
+    margin-left: 4px;
+}
+.work-img:hover .overlay{
+        transform: scale(1)
+}
+.mix-img{
+    margin-top: 30px;
+}
+
+.work-button .mixitup-control-active{
+    background-color: #028794;
+    color: #fff;
+   
+}
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+/*news start*/
+
+.news-cont{
+font-family: 'Exo', sans-serif;
+    padding: 60px 0
+}
+.news-cont-two{
+    text-align: left;
+    width: 90%
+}
+.news-cont-two h5{
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #2a2b2c;
+    margin-top: 15px;
+
+}
+.news-cont-two span{
+    font-size: 11px;
+    font-style: italic;
+    color: #028794
+}
+
+.news-cont-two p{
+    text-align: justify;
+    font-size: 12px;
+    color: #313233
+    
+}
+.news-btn button{
+    background-color: #028794;
+    color: #fff;
+ 
+    border-style: none;
+    padding: 10px 20px;
+    border-radius: 5px
+}
+
+.news-btn{
+    text-align: right
+}
+.slick-slide img {
+    display: block;
+    width: 90%;
+}
+
+/*news end*/
+#footer-top{
+    padding: 60px 0;
+    background-color: #070707;
+}
+.footer-col h5{
+    font-size:19px;
+    color: #028794;
+    text-transform: uppercase;
+    font-family: "Myriad Pro"
+    
+    
+}
+.footer-col ul li a,.footer-col ul li a h6{
+    color: #fff;
+    font-size: 13px;
+      font-family: "Myriad Pro";
+    text-transform: capitalize;
+        margin-bottom: 10px;
+
+        
+}
+.footer-col span{
+    margin-left: 7px;
+     font-family: "Myriad Pro";
+        margin-top: 7px;
+}
+.footer-col i{
+ color: #fff 
+}
+/* fotter top end*/
+#copy{
+    background-color: #070707;
+}
+
+#copy p{
+    color: #fff;
+    font-size: 12px;
+}
+#copy ul li a i{
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    background-color: #0073bf;
+    color: #fff;
+    text-align: center
+    
+}
+#copy ul li a i.fa-vimeo-v{
+    
+    background-color: #00c9df;
+    color: #fff;
+
+    
+}
+#copy ul li a i.fa-youtube{
+    
+    background-color: #fe5e5e;
+    color: #fff;
+
+    
+}
+
+
